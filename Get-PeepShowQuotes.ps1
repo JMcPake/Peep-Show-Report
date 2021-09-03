@@ -66,7 +66,7 @@ $Body += @'
 }
 '@
 
-$RestMethod = Invoke-RestMethod -Uri "https://api.peepquote.com/search" -Method "GET" -Headers $Headers -Body $Body
+$RestMethod = Invoke-RestMethod -Uri "https://api.peepquote.com/search" -Method "POST" -Headers $Headers -Body $Body
 
 Write-Output $RestMethod
 Write-Host $Body
